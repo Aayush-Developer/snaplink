@@ -1,0 +1,237 @@
+/* ================= Overlay ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(15, 23, 42, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+
+  animation: fadeIn 0.25s ease;
+}
+
+/* ================= Modal ================= */
+
+.success-modal {
+  position: relative;
+
+  width: 560px;
+  max-width: 92%;
+
+  background: #fff;
+
+  border-radius: 14px;
+
+  padding: 28px;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+
+  animation: scaleIn 0.25s ease;
+}
+
+.success-modal h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+
+  margin-bottom: 28px;
+}
+
+/* ================= Close Button ================= */
+
+.close-btn {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  background: #f1f5f9;
+}
+
+/* ================= Link Box ================= */
+
+.generated-link-box {
+  background: #eef4ff;
+
+  border-radius: 12px;
+
+  padding: 28px;
+
+  text-align: center;
+
+  margin-bottom: 26px;
+}
+
+.generated-label {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #64748b;
+
+  margin-bottom: 12px;
+}
+
+.generated-link {
+  font-size: 34px;
+  font-weight: 700;
+
+  color: #0052cc;
+
+  margin-bottom: 24px;
+
+  word-break: break-word;
+}
+
+/* ================= Buttons ================= */
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.modal-buttons a {
+  text-decoration: none;
+}
+
+.modal-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-width: 155px;
+  height: 48px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+/* Visit */
+
+.visit-btn {
+  background: white;
+
+  color: #2563eb;
+
+  border: 2px solid #2563eb;
+}
+
+.visit-btn:hover {
+  background: #2563eb;
+
+  color: white;
+}
+
+/* Copy */
+
+.copy-btn {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+}
+
+.copy-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ================= Divider ================= */
+
+.modal-divider {
+  border: none;
+
+  border-top: 1px solid #e5e7eb;
+
+  margin: 24px 0;
+}
+
+/* ================= Original URL ================= */
+
+.original-url label {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #334155;
+
+  margin-bottom: 10px;
+}
+
+.original-box {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+
+  padding: 14px;
+
+  color: #64748b;
+
+  line-height: 1.6;
+
+  word-break: break-word;
+
+  font-size: 14px;
+}
+
+/* ================= Animations ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.92);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

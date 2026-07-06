@@ -1,0 +1,193 @@
+/* ================= Page ================= */
+
+.auth-page{
+    min-height:calc(100vh - 80px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f8fafc;
+
+    padding:60px 20px;
+}
+
+/* ================= Card ================= */
+
+.auth-container{
+
+    width:100%;
+    max-width:460px;
+
+    background:white;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:40px;
+
+    box-shadow:
+        0 15px 40px rgba(15,23,42,.08);
+
+}
+
+/* ================= Header ================= */
+
+.auth-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.auth-header h1{
+
+    font-size:38px;
+
+    color:#0f172a;
+
+    margin-bottom:12px;
+
+}
+
+.auth-header p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+/* ================= Footer ================= */
+
+.auth-footer{
+
+    margin-top:28px;
+
+    text-align:center;
+
+    color:#64748b;
+
+}
+
+.auth-footer a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.auth-footer a:hover{
+
+    text-decoration:underline;
+
+}
+/* ================= Form ================= */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 22px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #334155;
+}
+
+.input-group input {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 0 16px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: .2s;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* ================= Password ================= */
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 50px;
+}
+
+.eye-btn {
+  position: absolute;
+
+  right: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  color: #64748b;
+
+  font-size: 20px;
+}
+
+/* ================= Button ================= */
+
+.auth-btn {
+  width: 180px;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .2s;
+}
+
+.auth-btn:hover {
+  background: #1d4ed8;
+}
+
+.auth-btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}

@@ -1,0 +1,173 @@
+/* ---------------- Global ---------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+.home {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* ---------------- Hero ---------------- */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  text-align: center;
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/* ---------------- Form ---------------- */
+
+.url-form {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 35px;
+}
+
+.form-title {
+  font-size: 30px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.form-subtitle {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.input,
+.alias-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: .25s;
+}
+
+.alias-input {
+  width: 320px;
+}
+
+.input:focus,
+.alias-input:focus {
+  border-color: #0052cc;
+  box-shadow: 0 0 0 3px rgba(0, 82, 204, .12);
+}
+
+.button-row {
+  margin-top: 10px;
+}
+
+.generate-btn {
+  padding: 13px 28px;
+  background: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.generate-btn:hover {
+  background: #003d99;
+}
+
+.generate-btn:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+/* ---------------- Features ---------------- */
+
+.features {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 30px;
+  transition: .25s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+.feature-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #eaf2ff;
+  color: #0052cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}

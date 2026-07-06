@@ -1,0 +1,89 @@
+.delete-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(15,23,42,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:1000;
+}
+
+.delete-modal{
+
+    width:420px;
+    max-width:90%;
+
+    background:white;
+
+    border-radius:14px;
+
+    padding:28px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.delete-modal h2{
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+}
+
+.delete-modal p{
+
+    color:#334155;
+
+    margin-bottom:8px;
+}
+
+.delete-modal span{
+
+    color:#64748b;
+
+    font-size:14px;
+}
+
+.delete-actions{
+
+    display:flex;
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:28px;
+}
+
+.cancel-btn{
+
+    padding:10px 20px;
+
+    border:1px solid #cbd5e1;
+
+    background:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.confirm-delete-btn{
+
+    padding:10px 20px;
+
+    border:none;
+
+    background:#ef4444;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.confirm-delete-btn:hover{
+
+    background:#dc2626;
+}
