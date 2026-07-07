@@ -11,7 +11,7 @@ function LinkCard({
   const copyLink = async () => {
     try {
       await navigator.clipboard.writeText(
-        `http://localhost:8000/${link.shortCode}`
+        `${import.meta.env.VITE_BACKEND_URL}/${link.shortCode}`
       );
 
       setCopied(true);
