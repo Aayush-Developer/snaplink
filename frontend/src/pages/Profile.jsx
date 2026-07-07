@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import ProfileCard from "../components/ProfileCard";
+import Navbar from "../components/Navbar.jsx";
+import ProfileCard from "../components/ProfileCard.jsx";
 
 import "../styles/profile.css";
 

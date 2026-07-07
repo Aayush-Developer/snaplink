@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import Navbar from "../components/Navbar";
-import SignupForm from "../components/SignupForm";
+import Navbar from "../components/Navbar.jsx";
+import SignupForm from "../components/SignupForm.jsx";
 
 
 import "../styles/auth.css";

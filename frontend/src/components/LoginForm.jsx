@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 
-import api from "../services/api";
+import api from "../services/api.js";
 
 function LoginForm() {
   const navigate = useNavigate();

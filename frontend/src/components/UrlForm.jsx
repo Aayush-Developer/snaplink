@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-import SuccessModal from "./SuccessModal";
-import api from "../services/api";
+import SuccessModal from "./SuccessModal.jsx";
+import api from "../services/api.js";
 
 const UrlForm = () => {
   const navigate = useNavigate();

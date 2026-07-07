@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import LinksHeader from "../components/LinksHeader";
-import LinkCard from "../components/LinkCard";
+import Navbar from "../components/Navbar.jsx";
+import LinksHeader from "../components/LinksHeader.jsx";
+import LinkCard from "../components/LinkCard.jsx";
 import DeleteModal from "../components/DeleteModal.jsx";
-import EditModal from "../components/EditModal";
-import api from "../services/api";
+import EditModal from "../components/EditModal.jsx";
+import api from "../services/api.js";
 import toast from "react-hot-toast";
 
 import "../styles/mylinks.css";

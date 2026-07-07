@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import Navbar from "../components/Navbar.jsx";
+import Hero from "../components/Hero.jsx";
 
 import "../styles/home.css";
 import "../styles/navbar.css";
