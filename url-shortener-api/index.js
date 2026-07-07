@@ -1,7 +1,9 @@
 const express=require('express')
 const app=express()
 const cors = require("cors");
-
+const db = require("./src/index");
+const { eq } = require("drizzle-orm");
+const { urlTable } = require("./src/schema/url.model");
 
 const urlrouter=require('./src/routes/url.routes')
 const router=require('./src/routes/user.routes')
