@@ -156,15 +156,15 @@ router.get("/codes", authMiddleware, async (req, res) => {
     code: codes,
   });
 });
-router.get('/:shortCode',async (req,res)=>{
-    const code=req.params.shortCode;
-    const [result]=await db.select().from(urlTable).where(eq(urlTable.shortCode,code))
+// router.get('/:shortCode',async (req,res)=>{
+//     const code=req.params.shortCode;
+//     const [result]=await db.select().from(urlTable).where(eq(urlTable.shortCode,code))
 
-    if(!result){
-        return res.status(400).json({error:'no shortcode exists'})
-    }
-    return res.redirect(result.targetURL)
-})
+//     if(!result){
+//         return res.status(400).json({error:'no shortcode exists'})
+//     }
+//     return res.redirect(result.targetURL)
+// })
 router.delete('/delete/:id',authMiddleware,async (req,res)=>{
     const id = req.params.id;
     const [isthere]=await db.select().from(urlTable).where(eq(urlTable.id,id))
