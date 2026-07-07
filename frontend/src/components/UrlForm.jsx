@@ -68,7 +68,7 @@ const UrlForm = () => {
           headers: {
             Authorization: `Bearer ${token}`,
           },
-        }
+        },
       );
 
       console.log("9. API Success");
@@ -76,7 +76,7 @@ const UrlForm = () => {
 
       setGeneratedLink({
         original: res.data.target,
-        short: `http://localhost:8000/${res.data.shortCode}`,
+        short: `${import.meta.env.VITE_BACKEND_URL}/${res.data.shortCode}`,
       });
 
       console.log("10. Generated Link Stored");
@@ -133,11 +133,7 @@ const UrlForm = () => {
         </div>
 
         <div className="button-row">
-          <button
-            className="generate-btn"
-            type="submit"
-            disabled={loading}
-          >
+          <button className="generate-btn" type="submit" disabled={loading}>
             {loading ? "Generating..." : "Generate Link"}
           </button>
         </div>
