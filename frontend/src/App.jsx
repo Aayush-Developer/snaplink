@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
-import LandingPage from "./pages/LandingPage";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import MyLinks from "./pages/MyLinks";
-import Profile from "./pages/Profile";
-import NotFound from "./pages/NotFound";
+import LandingPage from "./pages/LandingPage.jsx";
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
+import MyLinks from "./pages/MyLinks.jsx";
+import Profile from "./pages/Profile.jsx";
+import NotFound from "./pages/NotFound.jsx";
 import { Toaster } from "react-hot-toast";
 
 function App() {
