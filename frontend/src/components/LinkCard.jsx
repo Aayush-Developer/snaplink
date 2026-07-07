@@ -36,16 +36,16 @@ function LinkCard({
             Short Link
           </span>
 
-          <h3>
-            http://localhost:8000/{link.shortCode}
-          </h3>
+         <h3>
+  {`${import.meta.env.VITE_BACKEND_URL}/${link.shortCode}`}
+</h3>
 
         </div>
 
         <div className="action-buttons">
 
           <a
-            href={`http://localhost:8000/${link.shortCode}`}
+            href={`${import.meta.env.VITE_BACKEND_URL}/${link.shortCode}`}
             target="_blank"
             rel="noreferrer"
           >
